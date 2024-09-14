@@ -1,0 +1,14 @@
+database: &common
+  host: "db.example.net"
+  database: "database_test"
+  username: "testuser"
+  password: "password1"
+  port: 3306
+  enable: true
+  legacy: "yes"
+
+database_new:
+  <<: *common
+  database: "database_prod"
+  username: "produser"
+  password: "password2"
